@@ -4,8 +4,9 @@ const app = express();
 const db = require("./db");
 const { Post } = require("./models");
 
-app.get("/", (req, res) => {
-  res.send("You have reached the root route.");
+app.get("/posts", async (req, res) => {
+  const posts = await Post.find({});
+  res.json(posts);
 });
 
 app.listen(PORT, () => {
