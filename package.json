@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
     "start": "node server.js"
   },
   "repository": {
@@ -17,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/ben-manning/mongo-railway-trial/issues"
   },
-  "homepage": "https://github.com/ben-manning/mongo-railway-trial#readme"
+  "homepage": "https://github.com/ben-manning/mongo-railway-trial#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
